@@ -1,0 +1,6 @@
+{
+  "name": "Hometech Automation",
+  "description": "Premium, modern home automation and smart lighting solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

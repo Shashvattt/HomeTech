@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  /* Quiet Luxury Palette */
+  --color-champagne-50: #fdfcf9;
+  --color-champagne-100: #f9f6ef;
+  --color-champagne-200: #f2ebd9;
+  --color-champagne-300: #e4d7be;
+  --color-champagne-400: #cbb493;
+  --color-champagne-500: #b5956d;
+  --color-champagne-600: #9a7852;
+  --color-champagne-700: #7e5e3f;
+  
+  --color-charcoal-50: #fafafa;
+  --color-charcoal-100: #f4f4f4;
+  --color-charcoal-200: #e5e5e5;
+  --color-charcoal-300: #d4d4d4;
+  --color-charcoal-450: #888888;
+  --color-charcoal-600: #525252;
+  --color-charcoal-800: #262626;
+  --color-charcoal-900: #171717;
+  --color-charcoal-950: #0a0a0a;
+  
+  --color-olive-50: #f7f8f6;
+  --color-olive-100: #edf0ea;
+  --color-olive-200: #d6ded0;
+  --color-olive-300: #b5c3ad;
+  --color-olive-400: #8fa384;
+  --color-olive-500: #6d8461;
+  --color-olive-600: #546a4a;
+  --color-olive-700: #42523b;
+  
+  /* Extra transitions and layout helpers */
+  --animate-fade-in-up: fade-in-up 1s ease-out forwards;
+}
+
+@layer base {
+  body {
+    @apply bg-champagne-50 text-charcoal-900 font-sans antialiased selection:bg-champagne-300 selection:text-charcoal-950;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
